@@ -13,7 +13,7 @@ body{
 }
 
 div{
-    background-color:greenyellow;
+    background-color:#ffffff;
     width:15rem;
     height: 15rem;
     margin:2rem auto;
@@ -21,7 +21,7 @@ div{
 }
 /*dice one*/
 span{
-    background-color:darkred;
+    background-color:black;
     width:3rem;
     height: 3rem;
     display: block;
@@ -123,6 +123,42 @@ span{
 #dice_five span:nth-of-type(5){
     margin: -7.5rem 0 0 6rem;
 }
+
+/*dice six*/
+
+#dice_six span{
+    position:relative;
+    top:15%;
+    transform: translateY(-25%); 
+}
+
+#dice_six span:nth-of-type(1){
+    margin: 0 2rem 0 2rem;
+}
+#dice_six span:nth-of-type(2){
+    position:relative;
+    top:-15%;
+    transform: translateY(25%);
+    margin-left:10rem;
+}
+#dice_six span:nth-of-type(3){
+    position:relative;
+    top:25%;
+    transform: translateY(25%);
+    margin-left:10rem;
+}
+#dice_six span:nth-of-type(4){
+    margin: 0 2rem 0 2rem;
+}
+#dice_six span:nth-of-type(5){
+    margin: -7.5rem 0 0 2rem;
+}
+
+#dice_six span:nth-of-type(6){
+    margin: -3rem 0 0 10rem;
+}
+
+
 
 
 
