@@ -105,3 +105,80 @@ ul{
     transform: translateY(7rem);
 }
 
+/*dice five*/
+
+#dice_five ul li:nth-of-type(1){
+    height: calc(100%/4);
+    width:calc(100%/2);
+    float: left;
+    transform: translateY(1rem);
+}
+#dice_five ul li:nth-of-type(2){
+    height: calc(100%/4);
+    width:calc(100%/2);
+    float:left;
+    transform: translateY(1rem);
+}
+#dice_five ul li:nth-of-type(3){
+    height: calc(100%/3);
+    width:100%;
+    float: left;
+    transform: translateY(2rem);
+}
+#dice_five ul li:nth-of-type(4){
+    height: calc(100%/3);
+    width:calc(100%/2);
+    float:right;
+    transform: translateY(2rem);
+}
+#dice_five ul li:nth-of-type(5){
+    height: calc(100%/3);
+    width:calc(100%/2);
+    float:right;
+    transform: translateY(2rem);
+}
+
+/*dice six*/
+
+
+#dice_six ul li:nth-of-type(1){
+    height: calc(100%/4);
+    width:calc(100%/2);
+    float: left;
+    transform: translateY(1rem);
+}
+#dice_six ul li:nth-of-type(2){
+    height: calc(100%/4);
+    width:calc(100%/2);
+    float:left;
+    transform: translateY(1rem);
+}
+#dice_six ul li:nth-of-type(3){
+    height: calc(100%/3);
+    width:50%;
+    float: left;
+    transform: translateY(2rem);
+}
+#dice_six ul li:nth-of-type(4){
+    height: calc(100%/3);
+    width:calc(100%/2);
+    float:right;
+    transform: translateY(2rem);
+}
+#dice_six ul li:nth-of-type(5){
+    height: calc(100%/3);
+    width:calc(100%/2);
+    float:left;
+    transform: translateY(2rem);
+}
+#dice_six ul li:nth-of-type(6){
+    height: calc(100%/3);
+    width:calc(100%/2);
+    float:right;
+    transform: translateY(2rem);
+}
+
+
+
+
+
