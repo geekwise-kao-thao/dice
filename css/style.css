@@ -179,6 +179,96 @@ ul{
 }
 
 
+/*media query three rows on top and bottom*/
 
+@media only screen and (max-width:900px){
+    
+    #dice_one, #dice_two, #dice_three, #dice_four, #dice_five, #dice_six{
+        background-color: lightblue;
+        margin:0;
+        height:27.5rem;
+        width:27.5rem;
+        
+    } 
+    i{
+        transform: translateY(.5rem);
+    }
+    
+    html{
+        background-color:lightblue;
+    }
+    
+    body{
+        width:100%;
+        height: 55rem;
+        margin:0 auto;
+        display: block;
+    }
+    ul{
+        
+    }
 
+div{
+    background-color:white;
+    width:100%;
+    height: 100%;
+    display: block;
+    margin:0 auto;
+    border: .3rem solid white; 
+}
+
+ul{
+    background-color:grey;
+    list-style: none;
+    font-size: 3rem;
+    display: block;
+    margin:0 auto;
+    padding:0;
+    height: 60%;
+    width:60%;
+}
+    
+    
+    #section_one{
+        width:calc(100%/3);
+        height: 50%;
+        display: inline-block;
+        float: left;
+    }
+    #section_two{
+        width:calc(100%/3);
+        height: 50%;
+        display: inline-block;
+        float: left;
+    }
+    #section_three{
+        width:calc(100%/3);
+        height: 50%;
+        display: inline-block;
+        float: right;
+    }
+    #section_four{
+        width:calc(100%/3);
+        height: 50%;
+        display: inline-block;
+        float: left;
+    }
+    #section_five{
+        width:calc(100%/3);
+        height: 50%;
+        display: inline-block;
+        float: left;
+    }
+    #section_six{
+        width:calc(100%/3);
+        height: 50%;
+        display: inline-block;
+        float: left;
+    }   
+    
+     
+}
+
+/*media query make five dice with two on top, one centered, two on bottom*/
+@media only screen and
 
