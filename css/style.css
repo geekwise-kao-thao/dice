@@ -19,7 +19,7 @@ div{
     margin:2rem auto;
     border: .5rem solid;
 }
-
+/*dice one*/
 span{
     background-color:darkred;
     width:3rem;
@@ -31,3 +31,76 @@ span{
     top:50%;
     transform: translateY(-50%);
 }
+
+/*dice two*/
+#dice_two{
+    
+    
+}
+#dice_two span{
+    position:relative;
+    top:20%;
+    transform: translateY(-100%);
+    margin:2rem;
+}
+#dice_two span:nth-of-type(2){
+    margin:5rem 0 0 10rem;
+    
+}
+
+/*dice three*/
+
+#dice_three span{
+    position:relative;
+    top:25%;
+    transform: translateY(-25%);
+    
+}
+#dice_three span:nth-of-type(1){
+    position:relative;
+    top:15%;
+    transform: translateY(-15%);
+    margin: 0 2rem 0 2rem;
+}
+
+#dice_three span:nth-of-type(3){
+    position:relative;
+    top:35%;
+    transform: translateY(-35%);
+    margin: 0 2rem 0 10rem;
+}
+
+/*dice four*/
+#dice_four{
+    display: block;
+    margin:0 auto;
+}
+#dice_four div{
+    width:calc(100%/2);
+    height: 100%;
+    margin:0;
+    padding:0;
+    display:inline-block;
+}
+
+#dice_four div:nth-of-type(1){
+    float:left;
+}
+#dice_four div:nth-of-type(2){
+    float:right;
+}
+
+#dice_four div span{
+    position:relative;
+    top:25%;
+    transform: translateY(-25%);
+}
+
+#dice_four span:nth-of-type(2){
+    margin-top:25%;
+    
+}
+
+
+
+
