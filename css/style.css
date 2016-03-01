@@ -57,7 +57,11 @@ span{
     transform:translatex(.5rem);
 }
 
-/*dice four*/
+#dice_five_hidden{
+    display:none;
+}
+
+/*dice three*/
 #dice_three span i:nth-child(1){
     top: 1rem;
     position: absolute;
@@ -183,14 +187,91 @@ span{
     }
     
     
-    
-    
-    
-    
-    
 }
 
 
+@media only screen and (max-width:480px){
+    
+    div{
+        background-color:lightpink
+    }
+    span{
+        background-color: black;
+    }
+    i{
+        color:white;
+    }
+    
+    /*hide dice five and six*/
+    
+    
+    #dice_one{
+        width:calc(100%/2);
+        float:left;
+    }
+    #dice_two{
+        width:calc(100%/2);
+        float:left;
+    }
+    #dice_three{
+        width:calc(100%/2);
+        float:left;
+    }
+    #dice_four{
+        width:calc(100%/2);
+        float: left;
+    }
+    #dice_five{
+        display: none;
+    }
+    #dice_six{
+        display:none;
+    }
+    
+    
+    
+    
+    /*display dice five hidden*/
+    
+    #dice_five_hidden{
+        display:inline-block;
+    }
+    
+    
+    #dice_five_hidden span i:nth-child(1){
+    top: 1rem;
+    position: absolute;
+    transform:translatex(-1.3rem);
+}
+    #dice_five_hidden span i:nth-child(2){
+    top: 3rem;
+    position: absolute;
+    transform:translatex(-1.3rem);
+}
+    #dice_five_hidden span i:nth-child(3){
+    top: 1rem;
+    position: absolute;
+    transform:translatex(.5rem);
+}
+    #dice_five_hidden span i:nth-child(4){
+    top: 3rem;
+    position: absolute;
+    transform:translatex(.5rem);
+}
+    #dice_five_hidden span i:nth-child(5){
+    top: 2rem;
+    position: absolute;
+    transform:translatex(-.5rem);
+}
+    
+    
+}
+    
+    
+    
+    
+    
+    
 
 
 
