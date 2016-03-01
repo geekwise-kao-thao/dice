@@ -6,7 +6,7 @@ html, body{
 }
 
 body{
-    background-color:lightblue;
+    background-color:lightyellow;
     margin:0;
     padding:0;
     height: 100%;
@@ -14,268 +14,80 @@ body{
     
 }
 
-div{
-    background-color: lightgreen;
-    height: 50rem;
+body div{
+    background-color: lightyellow;
+    height:60rem;
     width:100%;
-    margin:0;
 }
 
-section{
-    height:calc(100%/6);
-    width:100%;
-    display: block;
-    margin:0 auto; 
-    text-align: center;
-}
-
-span{
-    background-color: white;
-    display:inline-block;
-    height: 5rem;
-    width: 5rem;
-    top:1.5rem;
+section div{
+    background-color:lightblue;
+    margin-top:.5rem;
     position:relative;
-    font-size:1rem;
+    border:solid;
+    border-radius:1.5rem;
 }
-/*dice one*/
-#dice_one span i{
-    top: 2rem;
-    position: absolute;
-    transform:translatex(-.5rem);
-}
+ 
 
-/*dice two*/
-#dice_two span i:nth-child(1){
-    top: 1rem;
-    position: absolute;
-    transform:translatex(-1.3rem);
-}
-#dice_two span i:nth-child(2){
-    top: 3rem;
-    position: absolute;
-    transform:translatex(.5rem);
-}
+.center{
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}   
 
-#dice_five_hidden{
-    display:none;
+.dot{
+    display: block;
+    background-color:darkslategrey;
+    height:2rem;
+    width:2rem;
+    border-radius:1rem;    
 }
-
-/*dice three*/
-#dice_three span i:nth-child(1){
-    top: 1rem;
-    position: absolute;
-    transform:translatex(-1.5rem);
-}
-#dice_three span i:nth-child(2){
-    top:2rem;
+.middle{
     position:absolute;
-    transform: translatex(-.5rem);
+    top:50%;
+    transform: translateY(-50%) translateX(-50%);
+    left:50%;
 }
-#dice_three span i:nth-child(3){
-    top: 3rem;
-    position: absolute;
-    transform:translatex(.5rem);
-}
-
-/*dice four*/
-#dice_four span i:nth-child(1){
-    top: 1rem;
-    position: absolute;
-    transform:translatex(-1.3rem);
-}
-#dice_four span i:nth-child(2){
-    top: 3rem;
-    position: absolute;
-    transform:translatex(-1.3rem);
-}
-#dice_four span i:nth-child(3){
-    top: 1rem;
-    position: absolute;
-    transform:translatex(.5rem);
-}
-#dice_four span i:nth-child(4){
-    top: 3rem;
-    position: absolute;
-    transform:translatex(.5rem);
+.height_and_width{
+    height:10rem;
+    width:10rem;
 }
 
-/*dice five*/
-#dice_five span i:nth-child(1){
-    top: 1rem;
-    position: absolute;
-    transform:translatex(-1.3rem);
+.top_left{
+    position:absolute;
+    top:25%;
+    transform: translateY(-50%) translateX(-50%);
+    left:25%;
 }
-#dice_five span i:nth-child(2){
-    top: 3rem;
-    position: absolute;
-    transform:translatex(-1.3rem);
+.top_right{
+    position:absolute;
+    top:25%;
+    transform: translateY(-50%) translateX(-50%);;
+    left:75%;
 }
-#dice_five span i:nth-child(3){
-    top: 1rem;
-    position: absolute;
-    transform:translatex(.5rem);
+.middle_left{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%) translateX(-50%);
+    left:25%;
 }
-#dice_five span i:nth-child(4){
-    top: 3rem;
-    position: absolute;
-    transform:translatex(.5rem);
+.middle_right{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%) translateX(-50%);
+    left:75%;
 }
-#dice_five span i:nth-child(5){
-    top: 2rem;
-    position: absolute;
-    transform:translatex(-.5rem);
+.bottom_left{
+    position:absolute;
+    top:75%;
+    transform: translateY(-50%) translateX(-50%);
+    left:25%;
 }
-/*dice six*/
-
-#dice_six span i:nth-child(1){
-    top: 1rem;
-    position: absolute;
-    transform:translatex(-1.3rem);
+.bottom_right{
+    position:absolute;
+    top:75%;
+    transform: translateY(-50%) translateX(-50%);
+    left:75%;
 }
-#dice_six span i:nth-child(2){
-    top: 3rem;
-    position: absolute;
-    transform:translatex(-1.3rem);
-}
-#dice_six span i:nth-child(3){
-    top: 1rem;
-    position: absolute;
-    transform:translatex(.5rem);
-}
-#dice_six span i:nth-child(4){
-    top: 3rem;
-    position: absolute;
-    transform:translatex(.5rem);
-}
-#dice_six span i:nth-child(5){
-    top: 2rem;
-    position: absolute;
-    transform:translatex(-1.3rem);
-}
-#dice_six span i:nth-child(6){
-    top: 2rem;
-    position: absolute;
-    transform:translatex(.5rem);
-}
-
-@media only screen and (max-width:1100px){
-    
-    span{
-        border-radius:1rem;
-    }
-    
-    #dice_one{
-        width:calc(100%/3);
-        float:left;
-    }
-    #dice_two{
-        width:calc(100%/3);
-        float:left;
-    }
-    #dice_three{
-        width:calc(100%/3);
-        float:left;
-    }
-    #dice_four{
-        width:calc(100%/3);
-        float: left;
-    }
-    #dice_five{
-        width:calc(100%/3);
-        float: left;
-    }
-    #dice_six{
-        width:calc(100%/3);
-        float:right;
-    }
-    
-    
-}
-
-
-@media only screen and (max-width:480px){
-    
-    div{
-        background-color:lightpink
-    }
-    span{
-        background-color: black;
-    }
-    i{
-        color:white;
-    }
-    
-    /*hide dice five and six*/
-    
-    
-    #dice_one{
-        width:calc(100%/2);
-        float:left;
-    }
-    #dice_two{
-        width:calc(100%/2);
-        float:left;
-    }
-    #dice_three{
-        width:calc(100%/2);
-        float:left;
-    }
-    #dice_four{
-        width:calc(100%/2);
-        float: left;
-    }
-    #dice_five{
-        display: none;
-    }
-    #dice_six{
-        display:none;
-    }
-    
-    
-    
-    
-    /*display dice five hidden*/
-    
-    #dice_five_hidden{
-        display:inline-block;
-    }
-    
-    
-    #dice_five_hidden span i:nth-child(1){
-    top: 1rem;
-    position: absolute;
-    transform:translatex(-1.3rem);
-}
-    #dice_five_hidden span i:nth-child(2){
-    top: 3rem;
-    position: absolute;
-    transform:translatex(-1.3rem);
-}
-    #dice_five_hidden span i:nth-child(3){
-    top: 1rem;
-    position: absolute;
-    transform:translatex(.5rem);
-}
-    #dice_five_hidden span i:nth-child(4){
-    top: 3rem;
-    position: absolute;
-    transform:translatex(.5rem);
-}
-    #dice_five_hidden span i:nth-child(5){
-    top: 2rem;
-    position: absolute;
-    transform:translatex(-.5rem);
-}
-    
-    
-}
-    
-    
-    
-    
-    
-    
-
 
 
