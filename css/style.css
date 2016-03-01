@@ -571,10 +571,13 @@ ul{
     #section_five{
         display: none;
     }
+    #section_five_hidden{
+        height:13rem;
+    }
     #section_five_hidden div{
     height: 11rem;
     width:11rem;       
-        transform: translateY(4rem);
+        transform: translateY(1rem);
     }
     
     #dice_five_hidden ul{
