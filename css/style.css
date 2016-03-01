@@ -475,13 +475,23 @@ ul{
 
 @media only screen and (max-width:500px){
     
-    #dice_one, #dice_two, #dice_three, #dice_four, #dice_five_hidden{
+    body{
+        text-align: center;
+    }
+    section{
+        display:block;
+        margin:0 auto;
         
-    } 
+    }
+    #dice_one, #dice_two, #dice_three, #dice_four{
+        display:inline-block;
+        
+    }
     
     #dice_six{
         display: none;
     }
+    
     
 
 ul{;
@@ -532,7 +542,6 @@ ul{;
         margin:0;
         height:18.5rem;
         width:18.5rem;
-        
     } 
     i{
         transform: translateY(.5rem);
@@ -563,8 +572,8 @@ ul{
         display: none;
     }
     #section_five_hidden div{
-    height: 60%;
-    width:30%;       
+    height: 11rem;
+    width:11rem;       
         transform: translateY(4rem);
     }
     
