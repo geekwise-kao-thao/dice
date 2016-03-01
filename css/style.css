@@ -58,6 +58,18 @@ section div{
     transform: translateY(-50%) translateX(-50%);
     left:25%;
 }
+.top_right{
+    position:absolute;
+    top:25%;
+    transform: translateY(-50%) translateX(-50%);;
+    left:75%;
+}
+.bottom_left{
+    position:absolute;
+    top:75%;
+    transform: translateY(-50%) translateX(-50%);
+    left:25%;
+}
 .bottom_right{
     position:absolute;
     top:75%;
