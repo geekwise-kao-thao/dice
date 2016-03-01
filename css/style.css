@@ -6,7 +6,7 @@ html, body{
 }
 
 body{
-    background-color:lightpink;
+    background-color:lightyellow;
     margin:0;
     padding:0;
     height: 100%;
@@ -15,7 +15,7 @@ body{
 }
 
 body div{
-    background-color: lightpink;
+    background-color: lightyellow;
     height:60rem;
     width:100%;
 }
