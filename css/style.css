@@ -9,600 +9,146 @@ body{
     background-color:lightblue;
     margin:0;
     padding:0;
+    height: 100%;
+    width:100%;
     
 }
 
 div{
-    background-color:grey;
-    width:15rem;
-    height: 15rem;
-    margin:2rem auto;
-    border: .5rem solid;
+    background-color: lightgreen;
+    height: 50rem;
+    width:100%;
+    margin:0;
 }
 
-ul{
-    list-style: none;
-    font-size: 3rem;
-    display: block;
-    margin:0 auto;
-    padding:0;
-    height: 100%;
+section{
+    height:calc(100%/6);
     width:100%;
-    position:relative;
-    top:50%;
-    transform: translateY(-50%);
+    display: block;
+    margin:0 auto; 
     text-align: center;
 }
 
-/*dice one*/
-
-#dice_one ul li:nth-of-type(1){
-    height: 20%;
-    width:100%;
-    transform: translateY(6rem);
+span{
+    background-color: white;
+    display:inline-block;
+    height: 5rem;
+    width: 5rem;
+    top:1.5rem;
+    position:relative;
+    font-size:1rem;
 }
 
-/*dice two*/
-
-#dice_two ul li:nth-of-type(1){
-    height: 90%;
-    width:50%;
-    float: left;
-    transform: translateY(10%);
+#dice_one span i{
+    top: 2rem;
+    position: absolute;
+    transform:translatex(-.5rem);
 }
-#dice_two ul li:nth-of-type(2){
-    height: 20%;
-    width:50%;
-    float:right;
-    transform: translateY(10rem);
+#dice_two span i:nth-child(1){
+    top: 1rem;
+    position: absolute;
+    transform:translatex(-1.3rem);
 }
-
-/*dice three*/
-
-#dice_three ul li:nth-of-type(1){
-    height: calc(100%/3);
-    width:calc(100%/3);
-    float: left;
-    transform: translateY(1rem);
+#dice_two span i:nth-child(2){
+    top: 3rem;
+    position: absolute;
+    transform:translatex(.5rem);
 }
-#dice_three ul li:nth-of-type(2){
-    height: calc(100%/3);
-    width:calc(100%/3);
-    float: left;
-    transform: translateY(6rem);
+#dice_three span i:nth-child(1){
+    top: 1rem;
+    position: absolute;
+    transform:translatex(-1.5rem);
 }
-#dice_three ul li:nth-of-type(3){
-    height: calc(100%/3);
-    width:calc(100%/3);
-    float: left;
-    transform: translateY(11rem);
+#dice_three span i:nth-child(2){
+    top:2rem;
+    position:absolute;
+    transform: translatex(-.5rem);
 }
-
-/*dice four*/
-
-#dice_four ul li:nth-of-type(1){
-    height: calc(100%/4);
-    width:calc(100%/2);
-    float: left;
-    transform: translateY(1rem);
+#dice_three span i:nth-child(3){
+    top: 3rem;
+    position: absolute;
+    transform:translatex(.5rem);
 }
-#dice_four ul li:nth-of-type(2){
-    height: calc(100%/4);
-    width:calc(100%/2);
-    float:left;
-    transform: translateY(1rem);
+#dice_four span i:nth-child(1){
+    top: 1rem;
+    position: absolute;
+    transform:translatex(-1.3rem);
 }
-#dice_four ul li:nth-of-type(3){
-    height: calc(100%/4);
-    width:calc(100%/2);
-    float: left;
-    transform: translateY(7rem);
+#dice_four span i:nth-child(2){
+    top: 3rem;
+    position: absolute;
+    transform:translatex(-1.3rem);
 }
-#dice_four ul li:nth-of-type(4){
-    height: calc(100%/4);
-    width:calc(100%/2);
-    float:right;
-    transform: translateY(7rem);
+#dice_four span i:nth-child(3){
+    top: 1rem;
+    position: absolute;
+    transform:translatex(.5rem);
 }
-
-/*hidden dice five*/
-#section_five_hidden{
-    display:none;
+#dice_four span i:nth-child(4){
+    top: 3rem;
+    position: absolute;
+    transform:translatex(.5rem);
 }
-/*end of hidden dice five*/
-
-/*dice five*/
-
-#dice_five ul li:nth-of-type(1){
-    height: calc(100%/4);
-    width:calc(100%/2);
-    float: left;
-    transform: translateY(1rem);
+#dice_five span i:nth-child(1){
+    top: 1rem;
+    position: absolute;
+    transform:translatex(-1.3rem);
 }
-#dice_five ul li:nth-of-type(2){
-    height: calc(100%/4);
-    width:calc(100%/2);
-    float:left;
-    transform: translateY(1rem);
+#dice_five span i:nth-child(2){
+    top: 3rem;
+    position: absolute;
+    transform:translatex(-1.3rem);
 }
-#dice_five ul li:nth-of-type(3){
-    height: calc(100%/3);
-    width:100%;
-    float: left;
-    transform: translateY(2rem);
+#dice_five span i:nth-child(3){
+    top: 1rem;
+    position: absolute;
+    transform:translatex(.5rem);
 }
-#dice_five ul li:nth-of-type(4){
-    height: calc(100%/3);
-    width:calc(100%/2);
-    float:right;
-    transform: translateY(2rem);
+#dice_five span i:nth-child(4){
+    top: 3rem;
+    position: absolute;
+    transform:translatex(.5rem);
 }
-#dice_five ul li:nth-of-type(5){
-    height: calc(100%/3);
-    width:calc(100%/2);
-    float:right;
-    transform: translateY(2rem);
+#dice_five span i:nth-child(5){
+    top: 2rem;
+    position: absolute;
+    transform:translatex(-.5rem);
 }
-
 /*dice six*/
 
-
-#dice_six ul li:nth-of-type(1){
-    height: calc(100%/4);
-    width:calc(100%/2);
-    float: left;
-    transform: translateY(1rem);
+#dice_six span i:nth-child(1){
+    top: 1rem;
+    position: absolute;
+    transform:translatex(-1.3rem);
 }
-#dice_six ul li:nth-of-type(2){
-    height: calc(100%/4);
-    width:calc(100%/2);
-    float:left;
-    transform: translateY(1rem);
+#dice_six span i:nth-child(2){
+    top: 3rem;
+    position: absolute;
+    transform:translatex(-1.3rem);
 }
-#dice_six ul li:nth-of-type(3){
-    height: calc(100%/3);
-    width:50%;
-    float: left;
-    transform: translateY(2rem);
+#dice_six span i:nth-child(3){
+    top: 1rem;
+    position: absolute;
+    transform:translatex(.5rem);
 }
-#dice_six ul li:nth-of-type(4){
-    height: calc(100%/3);
-    width:calc(100%/2);
-    float:right;
-    transform: translateY(2rem);
+#dice_six span i:nth-child(4){
+    top: 3rem;
+    position: absolute;
+    transform:translatex(.5rem);
 }
-#dice_six ul li:nth-of-type(5){
-    height: calc(100%/3);
-    width:calc(100%/2);
-    float:left;
-    transform: translateY(2rem);
+#dice_six span i:nth-child(5){
+    top: 2rem;
+    position: absolute;
+    transform:translatex(-1.3rem);
 }
-#dice_six ul li:nth-of-type(6){
-    height: calc(100%/3);
-    width:calc(100%/2);
-    float:right;
-    transform: translateY(2rem);
+#dice_six span i:nth-child(6){
+    top: 2rem;
+    position: absolute;
+    transform:translatex(.5rem);
 }
 
 
-/*media query three rows on top and bottom*/
-
-@media only screen and (max-width:1100px){
-    
-    #dice_one, #dice_two, #dice_three, #dice_four, #dice_five, #dice_six{
-        background-color: lightblue;
-        margin:0;
-        height:27.5rem;
-        width:27.5rem;
-        
-    } 
-    i{
-        transform: translateY(.5rem);
-    }
-    
-    html{
-        background-color:lightblue;
-    }
-    
-    body{
-        width:100%;
-        height: 55rem;
-        margin:0 auto;
-        display: block;
-    }
-    ul{
-        
-    }
-
-div{
-    background-color:white;
-    width:100%;
-    height: 100%;
-    display: block;
-    margin:0 auto;
-    border: .3rem solid lightblue; 
-}
-
-ul{
-    background-color:grey;
-    list-style: none;
-    font-size: 3rem;
-    display: block;
-    margin:0 auto;
-    padding:0;
-    height: 60%;
-    width:60%;
-}
-    
-    
-    #section_one{
-        width:calc(100%/3);
-        height: 50%;
-        display: inline-block;
-        float: left;
-    }
-    #section_two{
-        width:calc(100%/3);
-        height: 50%;
-        display: inline-block;
-        float: left;
-    }
-    #section_three{
-        width:calc(100%/3);
-        height: 50%;
-        display: inline-block;
-        float: right;
-    }
-    #section_four{
-        width:calc(100%/3);
-        height: 50%;
-        display: inline-block;
-        float: left;
-    }
-    #section_five{
-        width:calc(100%/3);
-        height: 50%;
-        display: inline-block;
-        float: left;
-    }
-    #section_six{
-        width:calc(100%/3);
-        height: 50%;
-        display: inline-block;
-        float: left;
-    }   
-    
-     
-}
-
-/*media query make five dice with two on top, one centered, two on bottom*/
-@media only screen and (max-width:550px){
-    
-    #dice_one, #dice_two, #dice_three, #dice_four, #dice_five_hidden{
-        height:17rem;
-        width:17rem;
-        
-    } 
-    
-    #dice_six{
-        display: none;
-    }
-    
-    i{
-        transform: translateY(-1.8rem);
-    }
-    
-
-ul{
-    background-color:white;
-    font-size: 2rem;
-    border-radius:1.5rem;
-}
-    
-    
-    
-    
-    #section_two ul li i:nth-of-type(1){
-        transform: translateY(.5rem)
-    }
-    #section_two ul li:nth-of-type(2) i{
-        transform: translateY(1rem)
-    }
-    
-    #section_three ul li i:nth-of-type(1){
-        transform: translateY(0rem)
-    }
-    #section_three ul li:nth-of-type(2) i{
-        transform: translateY(.5rem)
-    }
-    #section_three ul li:nth-of-type(3) i{
-        transform: translateY(1rem)
-    }
-    
-    #section_four ul li i:nth-of-type(1){
-        transform: translateY(1.5rem)
-    }
-    #section_four ul li:nth-of-type(2) i{
-        transform: translateY(1.5rem)
-    }
-    #section_four ul li:nth-of-type(3) i{
-        transform: translateY(0rem)
-    }
-    #section_four ul li:nth-of-type(4) i{
-        transform: translateY(0rem)
-    }
-    
-    #section_five_hidden ul li i:nth-of-type(1){
-        position:relative;
-        top:0rem;
-        transform: translateY(0rem)
-            
-    }
-    #section_five_hidden ul li:nth-of-type(2) i{
-        transform: translateY(.3rem)
-    }
-    #section_five_hidden ul li:nth-of-type(3) i{
-        transform: translateY(-.5rem)
-    }
-    #section_five_hidden ul li:nth-of-type(4) i{
-        transform: translateY(-1rem)
-    }
-    #section_five_hidden ul li:nth-of-type(5) i{
-        transform: translateY(-1rem)
-    }
-    
-    
-    /*trial: from six to five dices*/
-    
-    #dice_one, #dice_two, #dice_three, #dice_four{
-        background-color: lightblue;
-        margin:0;
-        height:27.5rem;
-        width:27.5rem;
-        
-    } 
-    i{
-        transform: translateY(.5rem);
-    }
-    
-    html{
-        background-color:lightblue;
-    }
-    
-    body{
-        width:100%;
-        height: 55rem;
-        margin:0 auto;
-        display: block;
-    }
-    section{
-        height: 10rem;
-    }
-
-ul{
-    font-size: 3rem;
-}
-    
-    
-    #section_one{
-        width:calc(90%/2);
-        height: calc(100%/3);
-        float: left;
-    }
-    #section_two{
-        width:calc(90%/2);
-        height: calc(100%/3);
-        float: left;
-    }
-    #section_three{
-        width:calc(90%/2);
-        height: calc(100%/3);
-        float: left;
-    }
-    #section_four{
-        width:calc(90%/2);
-        height: calc(100%/3);
-        float: none;
-    }
-    #section_five{
-        display: none;
-    }
-    #section_five_hidden{
-        background-color: lightblue;
-        display:inline-block;
-        width:100%;
-        height: calc(100%/3);
-        
-    }
-    #section_five_hidden div{
-        background-color:lightblue;
-    height: 90%;
-    width:35%;
-        transform: translateY(6rem);
-        
-        
-    }
-    
-    #dice_five_hidden ul{
-        height: 100%;
-        width:100%;
-        display: block;
-        margin:0 auto;
-        border-radius:1.5rem;
-    }
-    #dice_five_hidden ul li:nth-of-type(1){
-        width:50%;
-        height:calc(100%/3);
-        float: left;
-        position: relative;
-        top:2.5rem;
-    }
-    #dice_five_hidden ul li:nth-of-type(2){
-        width:50%;
-        height:calc(100%/3);
-        float:left;
-        position: relative;
-        top:2.5rem;
-    }
-    #dice_five_hidden ul li:nth-of-type(3){
-        width:100%;
-        height:calc(100%/3);
-        float:left;
-        position: relative;
-        top:2rem;
-    }
-    #dice_five_hidden ul li:nth-of-type(4){
-        width:50%;
-        height:calc(100%/3);
-        float:left;
-        position: relative;
-        top:1rem;
-    }
-    #dice_five_hidden ul li:nth-of-type(5){
-        width:50%;
-        height:calc(100%/3);
-        float:right;
-        position: relative;
-        top:1rem;
-    }
-    
-    
-    
-}
 
 
-/*phone media query*/
-
-@media only screen and (max-width:500px){
-    
-    body{
-        text-align: center;
-    }
-    section{
-        display:block;
-        margin:0 auto;
-        
-    }
-    #dice_one, #dice_two, #dice_three, #dice_four{
-        display:inline-block;
-        
-    }
-    
-    #dice_six{
-        display: none;
-    }
-    
-    
-
-ul{;
-    border-radius:2rem;
-}
-    #section_one ul li i{
-        transform: translateY(-1.5rem);
-    }
-    
-    #section_two ul li i:nth-of-type(1){
-        transform: translateY(.5rem)
-    }
-    #section_two ul li:nth-of-type(2) i{
-        transform: translateY(-2.5rem)
-    }
-    
-    #section_three ul li:nth-of-type(2) i{
-        transform: translateY(-1.5rem)
-    }
-    #section_three ul li:nth-of-type(3) i{
-        transform: translateY(-3rem)
-    }
-    
-    #section_four ul li i:nth-of-type(1){
-        transform: translateY(.5rem)
-    }
-    #section_four ul li:nth-of-type(2) i{
-        transform: translateY(.5rem)
-    }
-    #section_four ul li:nth-of-type(3) i{
-        transform: translateY(-2rem)
-    }
-    #section_four ul li:nth-of-type(4) i{
-        transform: translateY(-2rem)
-    }
-    #section_five_hidden ul li:nth-of-type(1){
-        transform: translateY(-1rem);
-    }
-    #section_five_hidden ul li:nth-of-type(2){
-        transform: translateY(-1rem);
-    }
-    #section_five_hidden ul li:nth-of-type(3){
-        transform: translateY(-.5rem);
-    }
-    
-    #dice_one, #dice_two, #dice_three, #dice_four{
-        background-color: lightblue;
-        margin:0;
-        height:18.5rem;
-        width:18.5rem;
-    } 
-    i{
-        transform: translateY(.5rem);
-    }
-    
-    body{
-        height: 55rem;
-    }
-
-ul{
-    font-size: 2rem;
-}
-    
-    
-    #section_one{
-        width:calc(100%/2);
-    }
-    #section_two{
-        width:calc(100%/2);
-    }
-    #section_three{
-        width:calc(100%/2);
-    }
-    #section_four{
-        width:calc(100%/2);
-    }
-    #section_five{
-        display: none;
-    }
-    #section_five_hidden{
-        height:13rem;
-    }
-    #section_five_hidden div{
-    height: 11rem;
-    width:11rem;       
-        transform: translateY(1rem);
-    }
-    
-    #dice_five_hidden ul{
-        border-radius:2rem;
-    }
-    
-    
-}
-
-@media only screen and (max-width:410px){
-    
-    #section_one{
-        width:calc(90%/2);
-    }
-    #section_two{
-        width:calc(90%/2);
-    }
-    #section_three{
-        width:calc(90%/2);
-    }
-    #section_four{
-        width:calc(90%/2);
-        float: left;
-    }
-    
-}
 
 
