@@ -587,5 +587,22 @@ ul{
     
 }
 
+@media only screen and (max-width:410px){
+    
+    #section_one{
+        width:calc(90%/2);
+    }
+    #section_two{
+        width:calc(90%/2);
+    }
+    #section_three{
+        width:calc(90%/2);
+    }
+    #section_four{
+        width:calc(90%/2);
+        float: left;
+    }
+    
+}
 
 
